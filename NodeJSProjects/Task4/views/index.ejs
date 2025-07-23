@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>User Input Form</h1>
+    <form onsubmit="return validateForm()" method="POST">
+      <label>Name:
+        <input type="text" name="username" id="username" required>
+      </label>
+      <label>Email:
+        <input type="email" name="email" id="email" required>
+      </label>
+      <label>Age:
+        <input type="number" name="age" id="age" required>
+      </label>
+      <label>Gender:
+        <select name="gender" id="gender" required>
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <div class="mb-3">
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" id="password" required />
+        <div id="password-strength" class="form-text"></div>
+      </div>
+      <div class="mb-3">
+        <label>Confirm Password</label>
+        <input type="password" class="form-control" id="confirm-password" required />
+        <div id="password-match" class="form-text"></div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="success-message" style="display: none;" class="alert alert-success mt-3">
+    Form submitted successfully
+    </div>
+  </div>
+
+  <script>
+    const passwordInput = document.getElementById('password');
+    const confirmInput = document.getElementById('confirm-password');
+    const strengthText = document.getElementById('password-strength');
+    const matchText = document.getElementById('password-match');
+
+    passwordInput.addEventListener('input', function () {
+      const val = passwordInput.value;
+      let strength = 'Weak';
+      let color = 'red';
+      if (val.length >= 8 && /[A-Z]/.test(val) && /[0-9]/.test(val) && /[\W]/.test(val)) {
+        strength = 'Strong';
+        color = 'green';
+      } else if (val.length >= 6) {
+        strength = 'Medium';
+        color = 'orange';
+      }
+      strengthText.textContent = `Strength: ${strength}`;
+      strengthText.style.color = color;
+    });
+
+    confirmInput.addEventListener('input', function () {
+      const pass = passwordInput.value;
+      const confirm = confirmInput.value;
+      if (pass === confirm) {
+        matchText.textContent = "Passwords match";
+        matchText.style.color = "green";
+      } else {
+        matchText.textContent = "Passwords do not match";
+        matchText.style.color = "red";
+      }
+    });
+
+    function validateForm() {
+      const username = document.getElementById("username").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const age = document.getElementById("age").value;
+      const gender = document.getElementById("gender").value;
+      const password = passwordInput.value;
+      const confirmPassword = confirmInput.value;
+
+      if (username.length < 3) {
+        alert("Name must be at least 3 characters.");
+        return false;
+      }
+      if (!email.includes('@')) {
+        alert("Invalid email format.");
+        return false;
+      }
+      if (age < 18) {
+        alert("You must be at least 18 years old.");
+        return false;
+      }
+      if (!gender) {
+        alert("Please select a gender.");
+        return false;
+      }
+      if (password.length < 6 || password !== confirmPassword) {
+        alert("Password is too weak or does not match.");
+        return false;
+      }
+
+      document.querySelector("form").style.display = "none";
+      document.getElementById("success-message").style.display = "block";
+      return false; 
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechVolution 2024</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">TechVolution 2024</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+          <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prizes">Prizes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to TechVolution 2024</h1>
+      <p>The future of technology awaits</p>
+       <img src="https://media.licdn.com/dms/image/D5612AQFGI_ofiqlAPQ/article-cover_image-shrink_720_1280/0/1712857558550?e=2147483647&v=beta&t=Q3JkPiiiSJ2MEyEoFANIYmiGanVUr4FbUMCSopiGd3c" alt="feature_image" width=1000px,height=500px>
+      <a href="#registration" class="btn btn-primary btn-lg">Register Now</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>About TechVolution 2024</h2>
+          <p>TechVolution 2024 is a futuristic technology conference that brings together the brightest minds in the industry to explore, innovate, and inspire. Our event features keynote speeches, hands-on workshops, and networking opportunities to help you stay ahead in the fast-paced world of technology.</p>
+        </div>
+        <div class="col-lg-6">
+          <h3>Organizers</h3>
+          <p>Organized by a team of passionate technologists and industry leaders, TechVolution 2024 aims to provide a platform for learning, collaboration, and growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Features</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="https://speakerflow.com/wp-content/uploads/2020/10/Featured-Image-for-The-Difference-Between-Guest-Speakers-And-Keynote-Speakers.png" class="card-img-top" alt="Feature 1">
+            <div class="card-body">
+              <h5 class="card-title">Keynote Speeches</h5>
+              <p class="card-text">Hear from industry leaders and visionaries who are shaping the future of technology.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc3FajhkAdlDU0kuFAomwVd5A8O2p25iRy3JxhfpGXXAJM30ZaIzetygzLpsG3TJdUfX4&usqp=CAU" class="card-img-top" alt="Feature 2">
+            <div class="card-body">
+              <h5 class="card-title">Hands-on Workshops</h5>
+              <p class="card-text">Participate in interactive workshops to gain practical skills and knowledge.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="https://connect-assets.prosple.com/cdn/ff/TEdwZDPVuLCHNZRDGfSP1oJy8iIiUdmkiazwbr3ebSQ/1645762916/public/styles/scale_890_no_upsize/public/2022-02/feature-article-Sharp%20%26%20Carter1-1000x677-2022.png?itok=_ZTUsLlD" class="card-img-top" alt="Feature 3">
+            <div class="card-body">
+              <h5 class="card-title">Networking Opportunities</h5>
+              <p class="card-text">Connect with peers, mentors, and potential collaborators in the tech community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <p>"TechVolution is a must-attend event for anyone in the tech industry."</p>
+              <footer>- Jane Doe, CEO of Tech Innovators</footer>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p>"A great place to learn about the latest trends and technologies."</p>
+              <footer>- John Smith, Software Engineer</footer>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p>"The workshops and networking sessions were incredibly valuable."</p>
+              <footer>- Sarah Johnson, Tech Enthusiast</footer>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Event Schedule</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 AM</td>
+              <td>Opening Keynote</td>
+              <td>Main Hall</td>
+            </tr>
+            <tr>
+              <td>11:00 AM</td>
+              <td>Workshop: AI and Machine Learning</td>
+              <td>Room 101</td>
+            </tr>
+            <tr>
+              <td>1:00 PM</td>
+              <td>Networking Lunch</td>
+              <td>Cafeteria</td>
+            </tr>
+            <tr>
+              <td>2:00 PM</td>
+              <td>Panel Discussion: Future of Tech</td>
+              <td>Main Hall</td>
+            </tr>
+            <tr>
+              <td>4:00 PM</td>
+              <td>Closing Remarks</td>
+              <td>Main Hall</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Gallery</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" class="img-fluid" alt="Gallery Image 1">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" class="img-fluid" alt="Gallery Image 2">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" class="img-fluid" alt="Gallery Image 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">2020</h5>
+              <p class="card-text">TechVolution was founded.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">2021</h5>
+              <p class="card-text">First annual conference held with 500 attendees.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">2022</h5>
+              <p class="card-text">Introduced new workshops and interactive sessions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">2023</h5>
+              <p class="card-text">Expanded to an international audience with over 1000 attendees.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="registration" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Register for TechVolution 2024</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" class="form-control" id="dob" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" class="form-control" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <select class="form-control" id="state" required>
+            <option value="">Select State</option>
+            <option value="CA">California</option>
+            <option value="NY">New York</option>
+            <option value="TX">Texas</option>
+            <!-- Add more states as needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip Code</label>
+          <input type="text" class="form-control" id="zip" required>
+        </div>
+        <div class="form-group">
+          <label for="preferences">Event Preferences</label>
+          <select class="form-control" id="preferences" multiple>
+            <option value="workshops">Workshops</option>
+            <option value="lectures">Lectures</option>
+            <option value="networking">Networking</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dietary">Dietary Restrictions</label>
+          <textarea class="form-control" id="dietary" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="tshirt">T-shirt Size</label>
+          <select class="form-control" id="tshirt" required>
+            <option value="">Select Size</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">X-Large</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Prizes Section -->
+  <section id="prizes" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Prizes</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">First Prize</h5>
+              <p class="card-text">An all-expense-paid trip to Silicon Valley.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Second Prize</h5>
+              <p class="card-text">A state-of-the-art laptop.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Third Prize</h5>
+              <p class="card-text">A collection of the latest tech gadgets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>Contact us: <a href="mailto:info@techvolution2024.com" class="text-white">info@techvolution2024.com</a></p>
+      <p>Follow us on:
+        <a href="#" class="text-white ml-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white ml-2"><i class="fab fa-instagram"></i></a>
+      </p>
+      <p>&copy; 2024 TechVolution. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Registration form validation and submission
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      let valid = true;
+
+      // Name validation
+      if (!document.getElementById('name').value.trim()) {
+        valid = false;
+        alert('Please enter your name.');
+      }
+
+      // Email validation
+      const email = document.getElementById('email').value;
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        valid = false;
+        alert('Please enter a valid email address.');
+      }
+
+      // Phone validation
+      const phone = document.getElementById('phone').value;
+      const phonePattern = /^\d{10}$/;
+      if (!phone.match(phonePattern)) {
+        valid = false;
+        alert('Please enter a valid 10-digit phone number.');
+      }
+if (!document.getElementById('dob').value) {
+        valid = false;
+        alert('Please enter your date of birth.');
+      }
+
+      // Address validation
+      if (!document.getElementById('address').value.trim()) {
+        valid = false;
+        alert('Please enter your address.');
+      }
+
+      // City validation
+      if (!document.getElementById('city').value.trim()) {
+        valid = false;
+        alert('Please enter your city.');
+      }
+
+      // State validation
+      if (!document.getElementById('state').value) {
+        valid = false;
+        alert('Please select your state.');
+      }
+
+      // Zip validation
+      const zip = document.getElementById('zip').value;
+      const zipPattern = /^\d{5}$/;
+      if (!zip.match(zipPattern)) {
+        valid = false;
+        alert('Please enter a valid 5-digit zip code.');
+      }
+
+      // T-shirt Size validation
+      if (!document.getElementById('tshirt').value) {
+        valid = false;
+        alert('Please select your T-shirt size.');
+      }
+
+      if (valid) {
+        alert('Registration successful!');
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+      <input type="text" name="username" placeholder="Username" required>
+
+      <div class="password-container">
+  <input type="password" name="password" placeholder="Password" id="passwordInput" required>
+  <span class="toggle-eye" onclick="togglePassword()">👁</span>
+</div>
+
+
+      <button type="submit">Login</button>
+    </form>
+    <div class="links">
+      <p>Don't have an account? <a href="/register">Register</a></p>
+      <p><a href="/forgot-password">Forgot Password?</a></p>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const input = document.getElementById("passwordInput");
+      const eye = document.querySelector(".toggle-eye");
+
+      if (input.type === "password") {
+        input.type = "text";
+        eye.textContent = "🙈";
+      } else {
+        input.type = "password";
+        eye.textContent = "👁";
+      }
+    }
+  </script>
+</body>
+</html>
+
